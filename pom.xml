@@ -14,18 +14,6 @@
 	<name>Falsework Muti-Tenant</name>
 	<description>Falsework 多租户应用支持</description>
 
-	<dependencyManagement>
-		<dependencies>
-			<dependency>
-				<groupId>net.falsework</groupId>
-				<artifactId>falsework-dependencies</artifactId>
-				<version>1.0-SNAPSHOT</version>
-				<type>pom</type>
-				<scope>import</scope>
-			</dependency>
-		</dependencies>
-	</dependencyManagement>
-
 	<build>
 		<plugins>
 			<plugin>
@@ -52,21 +40,14 @@
 	</build>
 
 	<dependencies>
-		<!-- test -->
 		<dependency>
-			<groupId>junit</groupId>
-			<artifactId>junit</artifactId>
-			<scope>test</scope>
-		</dependency>
-		<dependency>
-			<groupId>org.springframework</groupId>
-			<artifactId>spring-test</artifactId>
+			<groupId>net.falsework</groupId>
+			<artifactId>falsework-test</artifactId>
 			<scope>test</scope>
 		</dependency>
 		<dependency>
 			<groupId>net.falsework</groupId>
 			<artifactId>falsework-data</artifactId>
-			<version>1.0-SNAPSHOT</version>
 		</dependency>
 	</dependencies>
 
